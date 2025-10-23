@@ -3,34 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">  
+    <link rel="stylesheet" href="mission.css">
+
     <title>Space Missions Timeline</title>
 </head>
 <body>
-    <header>
-        <nav>
+      <!--    Navbar  -->
+      <nav class="nav_bar">
+          <div class="desktop_menu">
+              <div class="logo">
+                  <img src="images/logo.png" alt="#">
+                  <span>CosmicExplore</span>
+              </div>
+              <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html">MISSIONS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="catalog.html">CATALOG</a></li>
+                </ul>
+                <div class="login">
+                        <img src="images/person.png" alt="">
+                        <span><a href="login.html">Log In</a></span>
+                </div>
+            </div>
+
+            <div class="burger_menu">
+                <img class="burger_icon" src="images/burger_menu.png" alt="#">
+                <ul class="mobile_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html">MISSIONS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="catalog.html">CATALOG</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+
+            </div>
 
         </nav>
-    </header>
 
     <!-- SPACE MISSIONS TIMELINE PAGE - Rihab -->
-    <section id="timeline-header">
+    <!--    hero    -->
+        <section class="m_hero">
+            <img src="images/mission_hero.jpg" alt="">
+            <div class="m_text">
+                <h3 style="margin-bottom: 0.3em;font-family: 'Fira Mono', monospace;">Beyond the Stars</h3>
+                <p style="font-family: 'Alice', serif; font-size: 13px; line-height: 1.3;">Discover the evolution of space exploration and the missions that have pushed the limits of human curiosity.</p>
+            </div>
+        </section>
+    <!--    sub menu    -->
+        <div class="m_subMenu">
+                <a style="background-color: #479EF4;" href="#">Historical</a>
+                <a style="background-color: #8CD89C;" href="#">Current</a>
+                <a style="background-color: #FF5E3E;" href="#">UpComing</a>
+        </div>
+    
+    <!--    the time_line   -->
+        <section class="Timeline_section">
+            <div class="T_line"></div>
+                <div class="mission_container">
 
-    </section>
+                    <div class="box_date"><p class="left">1969</p></div> <!--mission 1-->
+                    <div class="circle"></div>
+                    <div class="box_info">
+                        <p class="mission_name"></p>
+                        <p class="mission_detail"></p>
+                    </div>
+                    
+                    <div class="box_info">                  <!--mission 2-->
+                        <p class="mission_name"></p>
+                        <p class="mission_detail"></p>
+                    </div>
+                    <div class="circle"></div>
+                    <div class="box_date"><p class="right">1969</p></div>
 
-    <section id="historical-missions">
 
-    </section>
-
-    <section id="current-missions">
-
-    </section>
-
-    <section id="future-missions">
-
-    </section>
-
-    <footer>
-
-    </footer>
+            </div>
+            
+        </section>
+    <footer></footer>
 </body>
 </html>
