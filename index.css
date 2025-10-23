@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*-------------------------      NAV_BAR     ------------------------*/
@@ -18,37 +18,38 @@
     color: white;
     z-index: 100;
 }
-a {color: white; text-decoration: none;}
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.logo img{
-    width: 3.5em;
-    height: 3.5em;
+.logo img {
+  width: 3.5em;
+  height: 3.5em;
 }
 ul {
-    width: auto;
+  width: auto;
 }
-ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 0.5em 1.5em;
-    font-weight: 100;
-    font-family: 'Nunito', sans-serif
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 100;
+  font-family: "Nunito", sans-serif;
 }
 
 .login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.login img{
-    height: 2em;
-    width: 2em;
+.login img {
+  height: 2em;
+  width: 2em;
 }
-.burger_menu{display: none;}
+.burger_menu {
+  display: none;
+}
 
 @media (max-width : 990px){
     .desktop_menu ul, .login{display: none;}
@@ -87,17 +88,112 @@ ul li{
 
 /*-------------------------      HERO SECTION - Raihana     ------------------------*/
 
-
 /*-------------------------      FEATURED SECTIONS - Ilyas     ------------------------*/
 
-
-/*-------------------------      ESTIMONIALS - Noha     ------------------------*/
-
+/*-------------------------      TESTIMONIALS - Noha     ------------------------*/
 
 /*-------------------------      INTERACTIVE FAQ - Yahia     ------------------------*/
+#faq {
+  font-family: "Plus Jakarta Sans";
+  padding: 2em;
+}
+#faq p {
+  padding: 1em 0;
+}
+#faq h1 {
+  font-size: 1em;
+}
 
+#faq details {
+  background-color: aliceblue;
+  border-radius: 0.25em;
+  margin: 0.5rem;
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+#faq summary {
+  /* Pin the custom marker to the container */
+  position: relative;
+  /* Register summary as an anchor element */
+  anchor-name: --summary;
 
+  &::marker {
+    content: "";
+  }
+
+  &::before,
+  &::after {
+    /* Custom marker dimensions */
+    content: "";
+    border-block-start: 3px solid #1b1761;
+    height: 0;
+    width: 1rem;
+
+    /* Positions the lines */
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+
+    /* Anchor the shape to the summary */
+    position: absolute;
+    position-anchor: --summary;
+    position-area: top end;
+  }
+
+  /* Rotate just the ::after line to create a "+"" shape */
+  &::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+  }
+}
+
+details[open] summary::after {
+  transform: rotate(0deg);
+}
 /*-------------------------      NEWSLETTER - Rihab     ------------------------*/
 
-
 /*-------------------------      Footer content     ------------------------*/
+footer {
+  background-color: #17222d;
+  color: white;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+}
+.copyrights {
+  margin: 1em;
+  align-self: center;
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+.footercont {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footercont .logo {
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+  font-family: "Fira Mono";
+  font-size: 1em;
+}
+.footercont .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.2em;
+  font-size: 0.75em;
+}
+.footercont .column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footercont .column span {
+  opacity: 0.75;
+}
+.footercont .column span:first-child {
+  font-weight: 700;
+  opacity: 1;
+}
