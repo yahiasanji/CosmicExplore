@@ -107,10 +107,65 @@ ul li {
 
 /*-------------------------      FEATURED SECTIONS - Ilyas     ------------------------*/
 
-/*-------------------------      ESTIMONIALS - Noha     ------------------------*/
+/*-------------------------      TESTIMONIALS - Noha     ------------------------*/
 
 /*-------------------------      INTERACTIVE FAQ - Yahia     ------------------------*/
+#faq {
+  font-family: "Plus Jakarta Sans";
+  padding: 2em;
+}
+#faq p {
+  padding: 1em 0;
+}
+#faq h1 {
+  font-size: 1em;
+}
 
+#faq details {
+  background-color: aliceblue;
+  border-radius: 0.25em;
+  margin: 0.5rem;
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+#faq summary {
+  /* Pin the custom marker to the container */
+  position: relative;
+  /* Register summary as an anchor element */
+  anchor-name: --summary;
+
+  &::marker {
+    content: "";
+  }
+
+  &::before,
+  &::after {
+    /* Custom marker dimensions */
+    content: "";
+    border-block-start: 3px solid #1b1761;
+    height: 0;
+    width: 1rem;
+
+    /* Positions the lines */
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+
+    /* Anchor the shape to the summary */
+    position: absolute;
+    position-anchor: --summary;
+    position-area: top end;
+  }
+
+  /* Rotate just the ::after line to create a "+"" shape */
+  &::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+  }
+}
+
+details[open] summary::after {
+  transform: rotate(0deg);
+}
 /*-------------------------      NEWSLETTER - Rihab     ------------------------*/
 
 /*-------------------------      Footer content     ------------------------*/
