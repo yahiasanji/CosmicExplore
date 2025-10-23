@@ -16,6 +16,7 @@
     height: 4.5em;
     font-family: 'Fira Mono', monospace;
     color: white;
+    z-index: 100;
 }
 a {color: white; text-decoration: none;}
 .logo {
@@ -60,7 +61,6 @@ ul li{
         position: absolute;
         /* display: none; */
         background-color: #17222D;
-        border: 1px solid yellow;
         top: 4.5em;
         left:50%;
         width: 50%;
@@ -71,7 +71,6 @@ ul li{
         transition: opacity 0.3s ease-in, visibility 0.4s ease-in; }
     .mobile_menu li{
         width: 100%;
-        border: 1px solid green;
         padding: 1em ;
         text-align: center;
         }
@@ -79,6 +78,7 @@ ul li{
     .burger_icon {height: 3em; width: 3.6em;margin:0.7em;}
     .burger_menu:hover .mobile_menu{
         /* display: block; */
+        z-index: 10;
         opacity:1;
         visibility: visible;
         pointer-events: auto;
