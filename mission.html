@@ -47,17 +47,17 @@
     <!-- SPACE MISSIONS TIMELINE PAGE - Rihab -->
     <!--    hero    -->
         <section class="m_hero">
-            <img src="images/mission_hero.jpg" alt="">
+            <img src="images/mission_hero.jpg" alt="#">
             <div class="m_text">
                 <h3 style="margin-bottom: 0.3em;font-family: 'Fira Mono', monospace;">Beyond the Stars</h3>
-                <p style="font-family: 'Alice', serif; font-size: 13px; line-height: 1.3;">Discover the evolution of space exploration and the missions that have pushed the limits of human curiosity.</p>
+                <p>Discover the evolution of space exploration and the missions that have pushed the limits of human curiosity.</p>
             </div>
         </section>
     <!--    sub menu    -->
         <div class="m_subMenu">
-                <a style="background-color: #479EF4;" href="#">Historical</a>
-                <a style="background-color: #8CD89C;" href="#">Current</a>
-                <a style="background-color: #FF5E3E;" href="#">UpComing</a>
+                <a style="background-color: #479EF4;" href="#Historical">Historical</a>
+                <a style="background-color: #8CD89C;" href="#current">Current</a>
+                <a style="background-color: #FF5E3E;" href="#upcoming">UpComing</a>
         </div>
     
     <!--    the time_line   -->
@@ -65,24 +65,129 @@
             <div class="T_line"></div>
                 <div class="mission_container">
 
-                    <div class="box_date"><p class="left">1969</p></div> <!--mission 1-->
-                    <div class="circle"></div>
+                    <div class="box_date" id="Historical"><p class="left blue">1969</p></div> <!--mission 1-->
+                    <div class="circle blue"></div>
                     <div class="box_info">
-                        <p class="mission_name"></p>
-                        <p class="mission_detail"></p>
+                        <p class="mission_name"> Apollo 11</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">First crewed Moon landing by NASA. Neil Armstrong and Buzz Aldrin walked on the lunar surface, marking a milestone in human history.</p>
+                            <a href="#">more ></a>
+                        </div>
                     </div>
                     
                     <div class="box_info">                  <!--mission 2-->
-                        <p class="mission_name"></p>
-                        <p class="mission_detail"></p>
+                        <p class="mission_name">Voyager</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">Twin probes exploring the outer planets. Provided first detailed images of Jupiter, Saturn, Uranus, and Neptune — now traveling in interstellar space.</p>
+                            <a href="#">more ></a>
+                        </div>
                     </div>
-                    <div class="circle"></div>
-                    <div class="box_date"><p class="right">1969</p></div>
+                    <div class="circle blue"></div>
+                    <div class="box_date"><p class="right blue">1977</p></div>
+
+                    <div class="box_date"><p class="left blue">1990</p></div> <!--mission 3-->
+                    <div class="circle blue"></div>
+                    <div class="box_info">
+                        <p class="mission_name">Hubble Space Telescope</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">Space telescope in Earth’s orbit capturing deep-space images that transformed astronomy and revealed the age of the universe.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box_info">                  <!--mission 4-->
+                        <p class="mission_name">Parker Solar Probe</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">First spacecraft to “touch” the Sun. Studies solar winds and magnetic fields while traveling at record-breaking speeds.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
+                    <div class="circle green"></div>
+                    <div class="box_date" id="current"><p class="right green">2018</p></div>
+
+                    <div class="box_date"><p class="left green">2020</p></div> <!--mission 5-->
+                    <div class="circle green"></div>
+                    <div class="box_info">
+                        <p class="mission_name"> Perseverance Rover</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">Mars rover searching for ancient life and collecting samples. Deployed Ingenuity, the first helicopter to fly on another planet.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box_info">                  <!--mission 6-->
+                        <p class="mission_name">James Webb Space Telescope</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">Powerful infrared observatory exploring early galaxies, star formation, and exoplanets. Operates 1.5 million km from Earth.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
+                    <div class="circle green"></div>
+                    <div class="box_date"><p class="right green">2021</p></div>
+
+                    <div class="box_date" id="upcoming"><p class="left orange">2026-2030</p></div> <!--mission 7-->
+                    <div class="circle orange"></div>
+                    <div class="box_info">
+                        <p class="mission_name"> Artemis Program</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">NASA’s plan to return humans to the Moon and build a sustainable base for future Mars missions.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box_info">                  <!--mission 8-->
+                        <p class="mission_name">Mars Sample Return</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">Joint NASA–ESA mission to bring Martian rock samples back to Earth for detailed analysis.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
+                    <div class="circle orange"></div>
+                    <div class="box_date"><p class="right orange">2030s</p></div>
+
+                    <div class="box_date" id="upcoming"><p class="left orange">2040, projected</p></div> <!--mission 9-->
+                    <div class="circle orange"></div>
+                    <div class="box_info">
+                        <p class="mission_name"> LUVOIR</p>
+                        <div class="mission_details">
+                            <p style="color: #837D7D;" class="mission_detail">Next-generation space telescope designed to study exoplanets and distant galaxies — a possible successor to James Webb.</p>
+                            <a href="#">more ></a>
+                        </div>
+                    </div>
 
 
             </div>
             
         </section>
-    <footer></footer>
+        <footer>
+      <div class="footercont">
+        <div class="logo">
+          <img src="images/logo.png" alt="#" />
+          <span>CosmicExplore</span>
+        </div>
+        <div class="container">
+          <div class="column">
+            <span>Legal</span>
+            <span>Terms of service</span>
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
+          </div>
+          <div class="column">
+            <span>Information</span>
+            <span>FAQ</span>
+            <span>Blog</span>
+            <span>Support</span>
+          </div>
+          <div class="column">
+            <span>Company</span>
+            <span>About Us</span>
+            <span>Careers</span>
+            <span>Contact Us</span>
+          </div>
+        </div>
+      </div>
+      <span class="copyrights">© 2024 Codebenders. All rights reserved</span>
+    </footer>
+
 </body>
 </html>
