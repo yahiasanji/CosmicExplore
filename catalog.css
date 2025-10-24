@@ -240,7 +240,7 @@ ul li:hover{border: 1px solid white;}
 }
 
 .jupiter {
-  background-image: url(images/Jupiter\ .png);
+  background-image: url(images/Jupiter.png);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -287,7 +287,7 @@ ul li:hover{border: 1px solid white;}
 }
 
 .mars {
-  background-image: url(images/mars\ .png);
+  background-image: url(images/mars.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -354,4 +354,61 @@ ul li:hover{border: 1px solid white;}
   .card-stat {
     font-size: 12px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------      Footer content     ------------------------*/
+footer {
+  background-color: #17222d;
+  color: white;i
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+}
+.copyrights {
+  margin: 1em;
+  align-self: center;
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+.footercont {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footercont .logo {
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+  font-family: "Fira Mono";
+  font-size: 1em;
+}
+.footercont .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.2em;
+  font-size: 0.75em;
+}
+.footercont .column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footercont .column span {
+  opacity: 0.75;
+}
+.footercont .column span:first-child {
+  font-weight: 700;
+  opacity: 1;
 }
