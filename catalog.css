@@ -356,11 +356,63 @@ ul li:hover{border: 1px solid white;}
   }
 }
 
+/*-------------------------      Stars & Constellations     ------------------------*/
+.Stars-Constellations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  row-gap: 70px;
+  border-radius: 20px;
+}
+.star-card {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 
 
+.star-info {
+    background:#656161;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    
+}
 
 
+.galaxies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  row-gap: 70px;
+}
+
+.galaxy-card {
+  background: linear-gradient(
+    180deg,
+    #6a6a6a 0%,
+    #3a3a3a 40%,
+    #2a2a2a 70%,
+    #1a1a1a 100%
+  );
+  border-radius: 20px;
+  padding: 20px 15px;
+  color: white;
+  position: relative;
+  overflow: visible;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
 
 
