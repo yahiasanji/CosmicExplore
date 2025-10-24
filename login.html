@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <h1 class="page-title">Register</h1>
+
+  <div class="register-box">
+    <form>
+      <div class="form-content">
+        <!-- Colonne gauche -->
+        <div class="left">
+          <input type="text" placeholder="Your Name ..." required>
+          <input type="email" placeholder="Your Email .." required>
+          <input type="text" placeholder="jj / mm / aaaa" required>
+          <input type="text" placeholder="Your address" required>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right">
+          <div class="experience">
+            <p class="title">Level of Experience :</p>
+            <div class="radio-group">
+              <label><input type="radio" name="level"> Beginner</label>
+              <label><input type="radio" name="level"> Intermediate</label>
+              <label><input type="radio" name="level"> Expert</label>
+            </div>
+          </div>
+
+          <!-- Hobbies -->
+          <div class="hobbies">
+            <p class="title">Interests or Hobbies :</p>
+            <div class="hobby-grid">
+              <div class="hobby-card">
+                <h4>Cosmology</h4>
+                <p>Studies the origin and evolution of the Universe.</p>
+                <label class="checkline"><input type="checkbox"> I select this</label>
+              </div>
+              <div class="hobby-card">
+                <h4>Astrophysics</h4>
+                <p>Study of the physics of stars and galaxies.</p>
+                <label class="checkline"><input type="checkbox"> I select this</label>
+              </div>
+              <div class="hobby-card">
+                <h4>Planetary Astronomy</h4>
+                <p>Study of planets, moons, and asteroids.</p>
+                <label class="checkline"><input type="checkbox"> I select this</label>
+              </div>
+              <div class="hobby-card">
+                <h4>Astrobiology</h4>
+                <p>Search for life elsewhere in space.</p>
+                <label class="checkline"><input type="checkbox"> I select this</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscription -->
+      <div class="subscription">
+        <p class="title">Subscription Options :</p>
+        <div class="plans">
+          <div class="plan-card">
+            <h4>Free</h4>
+            <p>Start your cosmic journey with basic features and daily space updates.</p>
+            <label class="checkline"><input type="checkbox"> I select this</label>
+          </div>
+          <div class="plan-card">
+            <h4>Premium ($5/month)</h4>
+            <p>Unlock more content, interactive tools, and detailed planetary guides.</p>
+            <label class="checkline"><input type="checkbox"> I select this</label>
+          </div>
+          <div class="plan-card">
+            <h4>Pro ($15/month)</h4>
+            <p>Full access to all features, exclusive missions, and learning resources.</p>
+            <label class="checkline"><input type="checkbox"> I select this</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="terms">
+        <label>
+          <input type="checkbox" required>
+          By continuing, you agree to our <a href="#">Terms and Conditions</a>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <button type="submit" class="send-btn">Send informations</button>
+
+</body>
+</html>
