@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.register-box {
+  width: 900px;
+  background: linear-gradient(145deg, #444a55, #2f3238);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.left, .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.left input {
+  width: 90%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-size: 0.95rem;
+  align-self: center;
+  height: 50px;
+}
+
+.experience {
+  width: 100%;
+  text-align: center;
+}
+.experience .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.hobbies {
+  text-align: center;
+  margin-top: 40px;
+}
+.hobbies .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hobby-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.hobby-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 15px 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.hobby-card h4 {
+  color: white;
+  margin-bottom: 5px;
+}
+.hobby-card p {
+  font-size: 0.85rem;
+  color: #ddd;
+  margin-bottom: 8px;
+}
+
+.subscription {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.subscription .title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.25);
+}
+
+.plan-card h4 {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.plan-card p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.terms {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.terms a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.send-btn {
+  display: block;
+  width: 50%;
+  margin: 35px auto 0;
+  padding: 14px 0;
+  background: #111827;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.send-btn:hover {
+  background: #0d1220;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 30px 0;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .register-box {
+    width: 95%;
+    padding: 25px;
+    background: linear-gradient(145deg, #17222D, #2a3036);
+  }
+
+  .form-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .left input {
+    width: 100%;
+    height: 48px;
+  }
+
+  .hobby-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .plan-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .plan-card:last-child {
+    grid-column: 1 / 3;
+    width: 70%;
+    justify-self: center;
+  }
+
+  .send-btn {
+    width: 80%;
+    margin-top: 25px;
+    font-size: 0.95rem;
+  }
+}
