@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -65,57 +64,198 @@ ul li:hover {
   display: none;
 }
 
-@media (max-width: 990px) {
-  .desktop_menu ul,
-  .login {
-    display: none;
-  }
-  .logo img {
-    width: 2.3em;
-    height: 2.3em;
-  }
-  .nav_bar {
-    padding-left: 0em;
-    padding-right: 0.5em;
-  }
-  .burger_menu {
-    display: flex;
-  }
-  .mobile_menu {
-    position: absolute;
-    /* display: none; */
-    background-color: #17222d;
-    top: 4.5em;
-    left: 50%;
-    width: 50%;
-    height: 16.4em;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in, visibility 0.4s ease-in;
-  }
-  .mobile_menu li {
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-  }
-  /* .mobile_menu a{border: 1px solid blue; width: 5em; height: 100%;} */
-  .burger_icon {
-    height: 3em;
-    width: 3.6em;
-    margin: 0.7em;
-  }
-  .burger_menu:hover .mobile_menu {
-    /* display: block; */
-    z-index: 10;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+@media (max-width : 990px){
+    .desktop_menu ul, .login{display: none;}
+    .logo img{
+            width: 2.3em;
+            height: 2.3em;}
+    .nav_bar{padding-left: 0em; padding-right: 0.5em;}
+    .burger_menu{display: flex;}
+    .mobile_menu{
+        position: absolute;
+        background-color: #17222D;
+        top: 4.5em;
+        left:50%;
+        width: 50%;
+        height: 16.4em;
+        opacity: 0;
+        visibility: hidden;        
+        pointer-events: none;    
+        transition: opacity 0.3s ease-in, visibility 0.4s ease-in; }
+    .mobile_menu li{
+        width: 100%;
+        padding: 1em ;
+        text-align: center;
+        }
+        .mobile_menu a{color: white;}
+        .mobile_menu li:hover{border:1px solid white;}
+    .burger_icon {height: 3em; width: 3.6em;margin:0.7em;}
+    .burger_menu:hover .mobile_menu{
+        z-index: 10;
+        opacity:1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
 }
 
-/*-------------------------      HERO SECTION - Raihana     ------------------------*/
+/*-------------------------      HERO SECTION - Rihab     ------------------------*/
+.h_hero{
+    /* position: relative; */
+    background: url(images/hero_home.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 12vw;
+    height: calc(15em + 25vw);
+}
+.h_hero img{
+    width: 100%;
+    height:16em;
+}
+.h_text {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    height: auto;
+    width: 70%;
+}
+.h_text p{
+    font-family: 'Alice', serif;
+    font-size: calc(.5em + 1vw);
+    line-height: 1.3;
+    margin-right: 30px;
+}
+.h_hero h3{font-size: calc(.5em + 2.5vw);}
+button {
+  width:30vw;
+  padding: 1.6vw;
+  border-radius: 7px;
+  color: white;
+  border: 1px solid white;
+  background: linear-gradient(to right, #17222D, #020307);
+  font-size: calc(.5em + 1vw);
+}
+button:hover{border: none;}
+/*-------------------------      FEATURED SECTIONS - Rihab     ------------------------*/
+/*  section_1 */
+#object-of-week{  
+  background: url(images/section_2\(home\).png) no-repeat, linear-gradient(to right ,#9D4021, #410A02) repeat;
+  background-position: -150% 50px;
+  height: calc(10em + 30vw);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end  ;
+}
+.section_2 .text{
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin-right: 10px;
+}
+.text {font-family: "Barlow Semi Condensed", sans-serif;}
+.text h3{font-size: calc(.5em + 6vw);letter-spacing: 10px; padding-left: 10px;}
+.text p{
+  font-size: 10px;
+  border: 1px solid transparent;
+  }
+@media (min-width: 990px){
+    #object-of-week{  
+        background-position: -25% 100px;
+        background-size: 700px, cover;
+}
+    .text p{font-size: 2em; margin:10px 50px;}
+    .text h3{letter-spacing: 0.7em;padding-left: 0.7em;}
+    .text{display: flex; flex-wrap: wrap;justify-content: center;}
+    .section_2{padding-right: 40px;}
+    button{width: 20vw; padding: 15px 20px;}
+}
+/*  section_2 */
 
+/*  section_3 */
+.container_ {
+            border: 1px solid black;
+            margin: 50px;
+            justify-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            border: 1px solid red;
+        }
+
+        .page-title {
+            font-size: 42px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #000000;
+            letter-spacing: -0.5px;
+        }
+
+        .exoplanet-card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+            background-color: #ffffff;
+        }
+
+        .exoplanet-image {
+            flex-shrink: 0;
+            width: 470px;
+            height: 470px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .exoplanet-content {
+            flex: 1;
+            padding: 0 30px;
+        }
+
+        .exoplanet-name {
+            font-size: 56px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #000000;
+            letter-spacing: -0.5px;
+        }
+
+        .exoplanet-description {
+            font-size: 32px;
+            line-height: 1.7;
+            color: #000000;
+            font-weight: 400;
+            margin-top: 50px;
+        }
+
+         @media (max-width: 480px) {
+            .page-title {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+
+            .exoplanet-name {
+                font-size: 28px;
+                margin-bottom: 16px;
+            }
+
+            .exoplanet-description {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-top: 20px;
+            }
+            .exoplanet-image{
+              width: 400px;
+              height: 400px;
+              align-self: center;
+            }
+        }
+/*-------------------------      TESTIMONIALS - Noha     ------------------------*/
 /*-------------------------      FEATURED SECTIONS - Yahia     ------------------------*/
 main {
   font-family: "Plus Jakarta Sans";
@@ -325,7 +465,75 @@ details[open] summary::after {
   transform: rotate(0deg);
 }
 /*-------------------------      NEWSLETTER - Rihab     ------------------------*/
+.newsletter-container {
+            background-color: #1e293b;
+            border-radius: 16px;
+            padding: 15px 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin: 30px;
+            justify-self: center;
+        }
+        .newsletter-title {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            flex-shrink: 0;
+        }
 
+        .newsletter-form {
+            display: flex;
+            gap: 0;
+            flex: 1;
+            min-width: 200px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 16px 20px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            color: #1e293b;
+            background-color: #ffffff;
+        }
+
+        .newsletter-input::placeholder {color: #94a3b8;}
+
+        .newsletter-submit {
+            padding: 16px;
+            background: #0F67B1;
+            color: #ffffff;
+            border: none;
+            border-radius: 0;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-submit:hover {background: #082982;}        
+        @media (max-width: 480px) {
+            .newsletter-title {font-size: 24px;}
+            .newsletter-input {
+                font-size: 14px;
+                padding: 8px 5px;
+                width: 150px;
+            }
+            .newsletter-submit {font-size: 14px; padding: 0px;}
+            .newsletter-title {font-size: 20px;}
+            .newsletter-container{ padding: 10px 10px; width: 350px;}
+
+        }
 /*-------------------------      Footer content     ------------------------*/
 footer {
   background-color: #17222d;

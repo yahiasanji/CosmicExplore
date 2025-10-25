@@ -6,9 +6,6 @@
 
 .m_hero{
     position: relative;
-    /* background-image: url(images/mission_hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
     height:12em;
 }
 .m_hero img{
