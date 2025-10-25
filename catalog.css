@@ -365,22 +365,66 @@ ul li:hover{border: 1px solid white;}
   border-radius: 20px;
 }
 .star-card {
+  background: linear-gradient(
+    180deg,
+    #6a6a6a 0%,
+    #3a3a3a 40%,
+    #2a2a2a 70%,
+    #1a1a1a 100%
+  );
+  border-radius: 20px;
+  padding: 20px 15px;
   color: white;
   position: relative;
+  overflow: visible;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.star-image {
+  width: 100px;
+  height: 100px;
+  margin-top: -60px;
+  margin-bottom: 12px;
+}
 
+.star-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
 
 .star-info {
-    background:#656161;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.star-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.star-info p {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.star-stat {
+  font-size: 10px;
+  opacity: 0.75;
+  margin-top: auto;
 }
 
 
@@ -408,10 +452,245 @@ ul li:hover{border: 1px solid white;}
   overflow: visible;
   min-height: 240px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.galaxy-image {
+  width: 140px;
+  height: 140px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.galaxy-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.galaxy-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.galaxy-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.galaxy-info p {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.galaxy-stat {
+  font-size: 10px;
+  opacity: 0.75;
+  margin-top: auto;
+}
+
+/*-------------------------      Galaxies Section     ------------------------*/
+.Galaxies {
+  padding: 30px 20px;
+  background: white;
+}
+
+.Galaxies h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*-------------------------      Black Holes Section     ------------------------*/
+.Black-Holes {
+  padding: 30px 20px;
+  background: white;
+}
+
+.Black-Holes h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-align: center;
+}
+
+.holes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  row-gap: 70px;
+}
+
+.hole-card {
+  background: linear-gradient(
+    180deg,
+    #6a6a6a 0%,
+    #3a3a3a 40%,
+    #2a2a2a 70%,
+    #1a1a1a 100%
+  );
+  border-radius: 20px;
+  padding: 20px 15px;
+  color: white;
+  position: relative;
+  overflow: visible;
+  min-height: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hole-image {
+  width: 140px;
+  height: 140px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.hole-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hole-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hole-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.hole-info p {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.hole-stat {
+  font-size: 10px;
+  opacity: 0.75;
+  margin-top: auto;
+}
+
+/*-------------------------      Responsive Design     ------------------------*/
+@media (min-width: 769px) {
+  .Stars-Constellations-grid {
+    max-width: 800px;
+    gap: 30px;
+    row-gap: 80px;
+  }
+
+  .galaxies-grid,
+  .holes-grid {
+    max-width: 600px;
+    gap: 30px;
+    row-gap: 80px;
+  }
+
+  .star-card {
+    min-height: 280px;
+    padding: 25px 20px;
+  }
+
+  .galaxy-card,
+  .hole-card {
+    min-height: 280px;
+    padding: 25px 20px;
+  }
+
+  .star-image {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+  }
+
+  .galaxy-image,
+  .hole-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .star-info h3,
+  .galaxy-info h3,
+  .hole-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .star-info p,
+  .galaxy-info p,
+  .hole-info p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .star-stat,
+  .galaxy-stat,
+  .hole-stat {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Stars-Constellations-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .galaxies-grid,
+  .holes-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .star-card {
+    min-height: auto;
+  }
+
+  .galaxy-card,
+  .hole-card {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .galaxy-image,
+  .hole-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+  }
 }
 
 
