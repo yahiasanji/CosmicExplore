@@ -2,15 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-body {
-  background: #f0f0f0;
+.login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding: 2em;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .page-title {
@@ -27,7 +26,7 @@ body {
   background: linear-gradient(145deg, #444a55, #2f3238);
   border-radius: 15px;
   padding: 40px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
 }
 
@@ -38,7 +37,8 @@ body {
   gap: 40px;
 }
 
-.left, .right {
+.left,
+.right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -87,11 +87,11 @@ body {
   gap: 15px;
 }
 .hobby-card {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 15px 20px;
   text-align: left;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 .hobby-card h4 {
   color: white;
@@ -125,18 +125,18 @@ body {
 }
 
 .plan-card {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 20px;
   width: 250px;
   text-align: center;
   transition: 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .plan-card:hover {
   transform: translateY(-5px);
-  background: rgba(255,255,255,0.25);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .plan-card h4 {
@@ -174,7 +174,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 .send-btn:hover {
   background: #0d1220;
@@ -182,7 +182,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   body {
     padding: 30px 0;
   }
@@ -194,7 +193,7 @@ body {
   .register-box {
     width: 95%;
     padding: 25px;
-    background: linear-gradient(145deg, #17222D, #2a3036);
+    background: linear-gradient(145deg, #17222d, #2a3036);
   }
 
   .form-content {
