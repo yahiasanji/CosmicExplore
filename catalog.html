@@ -1,48 +1,286 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celestial Catalog</title>
-</head>
-<body>
+    <link rel="stylesheet" href="catalog.css" />
+  </head>
+  <body><!-- c'est la partie de header mais il manque le css corespond a elle  -->
     <header>
-        <nav>
+          <nav class="nav_bar">
+          <div class="desktop_menu">
+              <div class="logo">
+                  <img src="images/logo.png" alt="#">
+                  <span>CosmicExplore</span>
+              </div>
+              <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html">MISSIONS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="catalog.html">CATALOG</a></li>
+                </ul>
+                <div class="login">
+                        <img src="images/person.png" alt="">
+                        <span><a href="login.html">Log In</a></span>
+                </div>
+            </div>
 
-        </nav>
+            <div class="burger_menu">
+                <img class="burger_icon" src="images/burger_menu.png" alt="#">
+                <ul class="mobile_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html">MISSIONS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="catalog.html">CATALOG</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+
+            </div>
+        </nav> 
     </header>
-
-    <!-- CELESTIAL CATALOG PAGE -->
-    <section id="catalog-header">
-       
+    <!-- Hero Section -->
+    <section class="section1">
+      <div class="text">
+        <h1 style="text-align: left;">Universe Exploration</h1>
+        <p style="text-align: left;">
+          Explore the fascinating journey through the Universe with our
+          comprehensive guide. Discover planets, stars, galaxies, and the
+          mysteries of space science and discovery.
+        </p>
+      </div>
     </section>
+    <div class="section">
+        <h2>Planets & Moons</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-image-container">
+                    <div class="card-image jupiter"></div>
+                </div>
+                <h3>Jupiter</h3>
+                <p>The largest planet in the Solar System, made mostly of hydrogen and helium.</p>
+                <p class="card-stat">Scientific fact: Diameter — 139,820 km</p>
+            </div>
 
-    <!-- PLANETS & MOONS - Noha -->
-    <section id="planets-moons">
-    
-    </section>
+            <div class="card">
+                <div class="card-image-container">
+                    <div class="card-image saturn"></div>
+                </div>
+                <h3>Saturn</h3>
+                <p>Known for its stunning rings made of ice and rock particles.</p>
+                <p class="card-stat">Scientific fact: Ring system up to 282,000 km in diameter of the planet</p>
+            </div>
 
-    <!-- STARS & CONSTELLATIONS - Rihab -->
-    <section id="stars-constellations">
-       
-    </section>
+            <div class="card">
+                <div class="card-image-container">
+                    <div class="card-image mars"></div>
+                </div>
+                <h3>Mars</h3>
+                <p>The Red Planet, known for its rust-colored surface and polar ice caps.</p>
+                <p class="card-stat">Scientific fact: Surface temperature: −63°C</p>
+            </div>
 
-    <!-- GALAXIES - Ilyas -->
-    <section id="galaxies">
-       
-    </section>
+            <div class="card">
+                <div class="card-image-container">
+                    <div class="card-image moon"></div>
+                </div>
+                <h3>Moon</h3>
+                <p>Earth's only natural satellite and the fifth largest moon in the Solar System.</p>
+                <p class="card-stat">Scientific fact: Distance from Earth: ~384,400 km</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- NEBULAE - Yahia -->
-    <section id="nebulae">
-       
-    </section>
 
-    <!-- BLACK HOLES - Trous Noires -->
-    <section id="black-holes">
-       
-    </section>
+    <div class="section">
+        <h2>Stars & Constellations</h2>
+        <div class="Stars-Constellations-grid">
+            <div class="star-card">
+                <div class="star-image">
+                    <img src="images/star1.png" alt="">
+                </div>
+                <div class="star-info">
+                    <h3>Sirius</h3>
+                    <p>The brightest star in the night sky, located in the constellation Canis Major.</p>
+                    <p class="star-stat">Scientific fact: Apparent magnitude: -1.46</p>
+                </div>
+            </div>
+            <div class="star-card">
+                <div class="star-image">
+                    <img src="images/star2.png" alt=""> 
+                </div>
+                <div class="star-info">
+                    <h3> Betelgeuse</h3>
+                    <p>A red supergiant star in the constellation Orion, known for its variability in brightness.</p>
+                    <p class="star-stat">Scientific fact: Radius ~1,000 times that of
+                </div>
+            </div>
+            <div class="star-card">
+                <div class="star-image">
+                    <img src="images/star3.png" alt="">
+            </div>
+                <div class="star-info">
+                    <h3>Polaris</h3>
+                    <p>A yellow supergiant that marks the direction of true north.</p>
+                    <p class="star-stat">Scientific fact: Distance — 433 light-years</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+<section class="Galaxies">
+    <h2>Galaxies</h2>
+    <div class="galaxies-grid">
+        <div class="galaxy-card">
+            <div class="galaxy-image">
+                <img src="images/Galaxy1.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3>Milky Way</h3>
+                <p>Our home galaxy, a barred spiral galaxy containing our Solar System.</p>
+                <p class="galaxy-stat">Scientific fact: Diameter ~100,000 light-years</p>
+            </div>
+        </div>
+        <div class="galaxy-card">
+            <div class="galaxy-image">
+                <img src="images/Galaxy2.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3>Andromeda</h3>
+                <p>The nearest spiral galaxy to the Milky Way and on a collision course with it.</p>
+                <p class="galaxy-stat">Scientific fact: Distance ~2.537 million light-years</p>
+            </div>
+        </div>
+        <div class="galaxy-card">
+            <div class="galaxy-image">
+                <img src="images/Galaxy3.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3>Sombrero Galaxy</h3>
+                <p>A spiral galaxy with a bright nucleus and a prominent dust lane in its disk.</p>
+                <p class="galaxy-stat">Scientific fact: Diameter ~50,000 light-years</p>
+            </div>
+        </div>
+        <div>
+            <div class="galaxy-image">
+                <img src="images/Galaxy4.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3>Whirlpool Galaxy</h3>
+                <p>A classic spiral galaxy known for its well-defined spiral arms.</p>
+                <p class="galaxy-stat">Scientific fact: Distance ~23 million light-years</p>
+            </div>
+        </div>
+        <div>
+            <div class="galaxy-image">
+                <img src="images/Galaxy5.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3>Orion Nebula</h3>
+                <p>A stellar nursery where new stars are being born.</p>
+                <p class="galaxy-stat">Scientific fact: Distance ~1,344 light-years</p>
+            </div>
+        </div>
+        <div>
+            <div class="galaxy-image">
+                <img src="images/Galaxy6.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3>Crab Nebula</h3>
+                <p>The remnant of a supernova explosion observed in 1054 AD.</p>
+                <p class="galaxy-stat">Scientific fact: Diameter ~11 light-years</p>
+            </div>
+        </div>
+        <div>
+            <div class="galaxy-image">
+                <img src="images/Galaxy7.png" alt="">
+            </div>
+            <div class="galaxy-info">
+                <h3> Lagoon Nebula</h3>
+                <p>A giant interstellar cloud in the constellation Sagittarius.</p>
+                <p class="galaxy-stat">Scientific fact: Distance ~4,100 light-years</p>
+            </div>
+        </div>
+
+</section>
+
+
+<section class="Black-Holes">
+    <h2>Black Holes</h2>
+    <div class="holes-grid">
+        <div class="hole-card">
+            <div class="hole-image">
+                <img src="images/Hole1.png" alt="">
+            </div>hole
+            <div class="hole-info">
+                <h3>Sagittarius A</h3>
+                <p>The supermassive black hole at the center of the Milky Way.</p>
+                <p class="hole-stat">Scientific fact: Mass — 4.3 million solar masses</p>
+            </div>
+        </div>hole
+        <div class="hole-card">
+            <div class="hole-image">
+                <img src="images/Hole2.png" alt="">
+            </div>
+            <div class="hole-info">
+                <h3>M87</h3>
+                <p>The first black hole ever imaged by the Event Horizon Telescope.</p>
+                <p class="hole-stat">Scientific fact: Mass — 6.5 billion solar masses</p>
+            </div>
+        </div>
+        <div class="hole-card">
+            <div class="hole-image">
+                <img src="images/Hole3.png" alt="">
+            </div>
+            <div class="hole-info">
+                <h3>Cygnus X-1</h3>
+                <p>A stellar-mass black hole in a binary system with a blue supergiant star.</p>
+                <p class="hole-stat">Scientific fact: Mass — 21 solar masses</p>
+            </div>
+        </div>
+        <div>
+            <div class="hole-image">
+                <img src="images/Hole4.png" alt="">
+            </div>
+            <div class="hole-info">
+                <h3>V404 Cygni</h3>
+                <p>A well-studied black hole known for powerful X-ray outbursts.</p>
+                <p class="hole-stat">Scientific fact: Distance from Earth — 7,800 light-years</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--footer  mais il menque le css corespond a elle  -->
     <footer>
-       
+      <div class="footercont">
+        <div class="logo">
+          <img src="images/logo.png" alt="#" />
+          <span>CosmicExplore</span>
+        </div>
+        <div class="container">
+          <div class="column">
+            <span>Legal</span>
+            <span>Terms of service</span>
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
+          </div>
+          <div class="column">
+            <span>Information</span>
+            <span>FAQ</span>
+            <span>Blog</span>
+            <span>Support</span>
+          </div>
+          <div class="column">
+            <span>Company</span>
+            <span>About Us</span>
+            <span>Careers</span>
+            <span>Contact Us</span>
+          </div>
+        </div>
+      </div>
+      <span class="copyrights">© 2024 Codebenders. All rights reserved</span>
     </footer>
-</body>
+  </body>
 </html>
