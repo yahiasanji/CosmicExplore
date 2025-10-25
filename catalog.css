@@ -3,21 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Nunito', sans-serif;
 }
 
-/*-------------------------      NAV_BAR     ------------------------*/
-.nav_bar, .desktop_menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #17222D;
-    padding-left: 2em;
-    padding-right: 2em;
-    width: 100%;
-    height: 4.5em;
-    font-family: 'Fira Mono', monospace;
-    color: white;
-    z-index: 100;
+/* ---------------- NAVIGATION ---------------- */
+.nav_bar, .desktop_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #17222D;
+  padding: 0 2em;
+  width: 100%;
+  height: 4.5em;
+  color: white;
+  z-index: 100;
 }
 .logo {
   display: flex;
@@ -29,79 +28,76 @@
   height: 3.5em;
 }
 ul {
-  width: auto;
+  display: flex;
+  list-style: none;
 }
 ul li {
-  list-style: none;
-  display: inline-block;
   padding: 0.5em 1.5em;
-  font-weight: 100;
-  font-family: "Nunito", sans-serif;
 }
-ul li a {color: white;}
-ul li:hover{border: 1px solid white;}
+ul li a {
+  color: white;
+}
+ul li:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
 .login {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 3px 20px;
 }
-.login:hover {border: 1px solid white;}
 .login img {
   height: 2em;
   width: 2em;
+  margin-right: 5px;
 }
-.login a{color: white;}
+.login a {
+  color: white;
+}
+
+/* ---------------- BURGER MENU ---------------- */
 .burger_menu {
   display: none;
 }
-
-@media (max-width : 990px){
-    .desktop_menu ul, .login{display: none;}
-    .logo img{
-            width: 2.3em;
-            height: 2.3em;}
-    .nav_bar{padding-left: 0em; padding-right: 0.5em;}
-    .burger_menu{display: flex;}
-    .mobile_menu{
-        position: absolute;
-        /* display: none; */
-        background-color: #17222D;
-        top: 4.5em;
-        left:50%;
-        width: 50%;
-        height: 16.4em;
-        opacity: 0;
-        visibility: hidden;        
-        pointer-events: none;    
-        transition: opacity 0.3s ease-in, visibility 0.4s ease-in; }
-    .mobile_menu li{
-        width: 100%;
-        padding: 1em ;
-        text-align: center;
-        }
-        .mobile_menu a{color: white;}
-        .mobile_menu li:hover{border:1px solid white;}
-    .burger_icon {height: 3em; width: 3.6em;margin:0.7em;}
-    .burger_menu:hover .mobile_menu{
-        /* display: block; */
-        z-index: 10;
-        opacity:1;
-        visibility: visible;
-        pointer-events: auto;
-    }
+@media (max-width: 990px) {
+  .desktop_menu ul, .login { display: none; }
+  .burger_menu { display: flex; align-items: center; position: relative; }
+  .burger_icon { height: 3em; width: 3.6em; margin: 0.7em; cursor: pointer; }
+  .mobile_menu {
+    position: absolute;
+    top: 4.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: #17222D;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .burger_menu:hover .mobile_menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile_menu li {
+    padding: 1em;
+    text-align: center;
+  }
+  .mobile_menu li:hover { background-color: rgba(255,255,255,0.1); }
 }
-/* hero*/
+
+/* ---------------- HERO SECTION ---------------- */
 .section1 {
-  background: url("images/backgroundCatalogue.png") center/cover;
-  background-repeat: no-repeat;
+  background: url("images/backgroundCatalogue.png") center/cover no-repeat;
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
 .section1 .text {
   color: white;
   text-align: center;
@@ -110,57 +106,27 @@ ul li:hover{border: 1px solid white;}
   gap: 20px;
   max-width: 400px;
 }
-
 .section1 .text h1 {
   font-size: 30px;
 }
-
 .section1 .text p {
   font-size: 20px;
   font-weight: 100;
 }
-/* hero*/
-/*    sub menu    */
-.m_subMenu a {
-  width: 8.7em;
-  padding: 0.4em 1.5em;
-  margin: 0.2em;
-  border-radius: 15px;
-  text-align: center;
-  font-family: "Fira Mono";
-  font-size: 12px;
-  color: white;
-}
-.m_subMenu {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1em;
-  padding: 0 1em;
-}
-.hero {
-  background: linear-gradient(rgba(0, 20, 40, 0.7), rgba(0, 20, 40, 0.7)),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><rect fill="%23001428" width="800" height="400"/><circle fill="%23ffffff" cx="100" cy="80" r="1.5" opacity="0.8"/><circle fill="%23ffffff" cx="200" cy="120" r="1" opacity="0.6"/><circle fill="%23ffffff" cx="350" cy="60" r="1.2" opacity="0.7"/><circle fill="%23ffffff" cx="500" cy="150" r="0.8" opacity="0.5"/><circle fill="%23ffffff" cx="650" cy="90" r="1.3" opacity="0.8"/><circle fill="%23ffffff" cx="750" cy="180" r="1" opacity="0.6"/><circle fill="%23ffffff" cx="150" cy="200" r="0.9" opacity="0.7"/><circle fill="%23ffffff" cx="400" cy="180" r="1.1" opacity="0.6"/><circle fill="%23ffffff" cx="600" cy="250" r="1.2" opacity="0.8"/></svg>');
-  background-size: cover;
-  background-position: center;
-  padding: 40px 20px;
-  color: white;
+
+/* ---------------- GENERAL SECTION TITLES ---------------- */
+.section h2,
+.Stars-Constellations h2,
+.Galaxies h2,
+.Black-Holes h2 {
+  font-size: 26px;
+  margin: 25px;
+  color: #1a1a1a;
+  font-weight: 700;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.hero p {
-  font-size: 14px;
-  line-height: 1.6;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
+/* ---------------- PLANETS & MOONS ---------------- */
 .section {
   padding: 30px 20px;
   background: white;
@@ -356,390 +322,173 @@ ul li:hover{border: 1px solid white;}
   }
 }
 
-/*-------------------------      Stars & Constellations     ------------------------*/
+
+/* ---------------- STARS & CONSTELLATIONS ---------------- */
 .Stars-Constellations-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  row-gap: 70px;
-  border-radius: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .star-card {
-  background: linear-gradient(
-    180deg,
-    #6a6a6a 0%,
-    #3a3a3a 40%,
-    #2a2a2a 70%,
-    #1a1a1a 100%
-  );
-  border-radius: 20px;
-  padding: 20px 15px;
+  background: #282828;
+  border-radius: 15px;
+  overflow: hidden;
   color: white;
-  position: relative;
-  overflow: visible;
-  min-height: 240px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.star-image {
-  width: 100px;
-  height: 100px;
-  margin-top: -60px;
-  margin-bottom: 12px;
+.star-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
-
-.star-image img {
+.star-card img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  height: 150px;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
-
 .star-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  padding: 15px;
 }
-
 .star-info h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
-
 .star-info p {
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 13px;
+  margin-bottom: 5px;
   opacity: 0.85;
-  margin-bottom: 10px;
 }
-
 .star-stat {
-  font-size: 10px;
-  opacity: 0.75;
-  margin-top: auto;
+  font-size: 11px;
+  opacity: 0.6;
 }
 
-
+/* ---------------- GALAXIES ---------------- */
 .galaxies-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
   margin: 0 auto;
-  row-gap: 70px;
 }
-
 .galaxy-card {
-  background: linear-gradient(
-    180deg,
-    #6a6a6a 0%,
-    #3a3a3a 40%,
-    #2a2a2a 70%,
-    #1a1a1a 100%
-  );
-  border-radius: 20px;
-  padding: 20px 15px;
+  background: #222222;
+  border-radius: 15px;
+  overflow: hidden;
   color: white;
-  position: relative;
-  overflow: visible;
-  min-height: 240px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.galaxy-image {
-  width: 140px;
-  height: 140px;
-  margin-right: 20px;
-  flex-shrink: 0;
+.galaxy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
-
-.galaxy-image img {
+.galaxy-card img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  height: 150px;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 .galaxy-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 15px;
 }
-
 .galaxy-info h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
-
 .galaxy-info p {
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 13px;
+  margin-bottom: 5px;
   opacity: 0.85;
-  margin-bottom: 10px;
 }
-
 .galaxy-stat {
-  font-size: 10px;
-  opacity: 0.75;
-  margin-top: auto;
+  font-size: 11px;
+  opacity: 0.6;
 }
 
-/*-------------------------      Galaxies Section     ------------------------*/
-.Galaxies {
-  padding: 30px 20px;
-  background: white;
-}
-
-.Galaxies h2 {
-  font-size: 22px;
-  margin-bottom: 25px;
-  color: #1a1a1a;
-  font-weight: 600;
-  text-align: center;
-}
-
-/*-------------------------      Black Holes Section     ------------------------*/
-.Black-Holes {
-  padding: 30px 20px;
-  background: white;
-}
-
-.Black-Holes h2 {
-  font-size: 22px;
-  margin-bottom: 25px;
-  color: #1a1a1a;
-  font-weight: 600;
-  text-align: center;
-}
-
+/* ---------------- BLACK HOLES ---------------- */
 .holes-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 500px;
-  margin: 0 auto;
-  row-gap: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 20px auto;
 }
-
 .hole-card {
-  background: linear-gradient(
-    180deg,
-    #6a6a6a 0%,
-    #3a3a3a 40%,
-    #2a2a2a 70%,
-    #1a1a1a 100%
-  );
-  border-radius: 20px;
-  padding: 20px 15px;
+  background: #1b1b1b;
+  border-radius: 15px;
+  overflow: hidden;
   color: white;
-  position: relative;
-  overflow: visible;
-  min-height: 240px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.hole-image {
-  width: 140px;
-  height: 140px;
-  margin-right: 20px;
-  flex-shrink: 0;
+.hole-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
-
-.hole-image img {
+.hole-card img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  height: 150px;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 .hole-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 15px;
 }
-
 .hole-info h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
-
 .hole-info p {
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 13px;
+  margin-bottom: 5px;
   opacity: 0.85;
-  margin-bottom: 10px;
 }
-
 .hole-stat {
-  font-size: 10px;
-  opacity: 0.75;
-  margin-top: auto;
+  font-size: 11px;
+  opacity: 0.6;
 }
 
-/*-------------------------      Responsive Design     ------------------------*/
-@media (min-width: 769px) {
-  .Stars-Constellations-grid {
-    max-width: 800px;
-    gap: 30px;
-    row-gap: 80px;
-  }
-
-  .galaxies-grid,
-  .holes-grid {
-    max-width: 600px;
-    gap: 30px;
-    row-gap: 80px;
-  }
-
-  .star-card {
-    min-height: 280px;
-    padding: 25px 20px;
-  }
-
-  .galaxy-card,
-  .hole-card {
-    min-height: 280px;
-    padding: 25px 20px;
-  }
-
-  .star-image {
-    width: 120px;
-    height: 120px;
-    margin-top: -60px;
-  }
-
-  .galaxy-image,
-  .hole-image {
-    width: 160px;
-    height: 160px;
-  }
-
-  .star-info h3,
-  .galaxy-info h3,
-  .hole-info h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  .star-info p,
-  .galaxy-info p,
-  .hole-info p {
-    font-size: 13px;
-    margin-bottom: 15px;
-  }
-
-  .star-stat,
-  .galaxy-stat,
-  .hole-stat {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .Stars-Constellations-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .galaxies-grid,
-  .holes-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-  
-  .star-card {
-    min-height: auto;
-  }
-
-  .galaxy-card,
-  .hole-card {
-    flex-direction: column;
-    text-align: center;
-    min-height: auto;
-  }
-
-  .galaxy-image,
-  .hole-image {
-    margin-right: 0;
-    margin-bottom: 15px;
-    width: 120px;
-    height: 120px;
-  }
-}
-
-
-
-
-
-/*-------------------------      Footer content     ------------------------*/
+/* ---------------- FOOTER ---------------- */
 footer {
   background-color: #17222d;
-  color: white;i
-  font-family: "Inter";
+  color: white;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-}
-.copyrights {
-  margin: 1em;
-  align-self: center;
-  font-size: 0.75em;
-  opacity: 0.75;
+  padding: 2em;
 }
 .footercont {
-  padding: 2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 2em;
 }
 .footercont .logo {
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 2em;
   font-family: "Fira Mono";
-  font-size: 1em;
+  margin-bottom: 2em;
+}
+.footercont .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 .footercont .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2em;
   font-size: 0.75em;
 }
 .footercont .column {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-}
-.footercont .column span {
-  opacity: 0.75;
+  gap: 0.8em;
 }
 .footercont .column span:first-child {
   font-weight: 700;
-  opacity: 1;
+}
+.copyrights {
+  margin: 1em;
+  align-self: center;
+  font-size: 0.75em;
+  opacity: 0.75;
 }
