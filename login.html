@@ -1,98 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register</title>
-  <link rel="stylesheet" href="login.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="login.css" />
 
-  <h1 class="page-title">Register</h1>
-
-  <div class="register-box">
-    <form>
-      <div class="form-content">
-        <!-- Colonne gauche -->
-        <div class="left">
-          <input type="text" placeholder="Your Name ..." required>
-          <input type="email" placeholder="Your Email .." required>
-          <input type="text" placeholder="jj / mm / aaaa" required>
-          <input type="text" placeholder="Your address" required>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Fira+Mono:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="desktop_menu">
+        <div class="logo">
+          <img src="images/logo.png" alt="#" />
+          <span>CosmicExplore</span>
         </div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="mission.html">MISSIONS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="catalog.html">CATALOG</a></li>
+        </ul>
+        <div class="login">
+          <img src="images/person.png" alt="" />
+          <span><a href="login.html">Log In</a></span>
+        </div>
+      </div>
 
-        <!-- Colonne droite -->
-        <div class="right">
-          <div class="experience">
-            <p class="title">Level of Experience :</p>
-            <div class="radio-group">
-              <label><input type="radio" name="level"> Beginner</label>
-              <label><input type="radio" name="level"> Intermediate</label>
-              <label><input type="radio" name="level"> Expert</label>
+      <div class="burger_menu">
+        <img class="burger_icon" src="images/burger_menu.png" alt="#" />
+        <ul class="mobile_menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="mission.html">MISSIONS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="catalog.html">CATALOG</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="login-form">
+      <h1 class="page-title">Register</h1>
+      <div class="register-box">
+        <form>
+          <div class="form-content">
+            <!-- Colonne gauche -->
+            <div class="left">
+              <input type="text" placeholder="Your Name ..." required />
+              <input type="email" placeholder="Your Email .." required />
+              <input type="text" placeholder="jj / mm / aaaa" required />
+              <input type="text" placeholder="Your address" required />
+            </div>
+
+            <!-- Colonne droite -->
+            <div class="right">
+              <div class="experience">
+                <p class="title">Level of Experience :</p>
+                <div class="radio-group">
+                  <label><input type="radio" name="level" /> Beginner</label>
+                  <label
+                    ><input type="radio" name="level" /> Intermediate</label
+                  >
+                  <label><input type="radio" name="level" /> Expert</label>
+                </div>
+              </div>
+
+              <!-- Hobbies -->
+              <div class="hobbies">
+                <p class="title">Interests or Hobbies :</p>
+                <div class="hobby-grid">
+                  <div class="hobby-card">
+                    <h4>Cosmology</h4>
+                    <p>Studies the origin and evolution of the Universe.</p>
+                    <label class="checkline"
+                      ><input type="checkbox" /> I select this</label
+                    >
+                  </div>
+                  <div class="hobby-card">
+                    <h4>Astrophysics</h4>
+                    <p>Study of the physics of stars and galaxies.</p>
+                    <label class="checkline"
+                      ><input type="checkbox" /> I select this</label
+                    >
+                  </div>
+                  <div class="hobby-card">
+                    <h4>Planetary Astronomy</h4>
+                    <p>Study of planets, moons, and asteroids.</p>
+                    <label class="checkline"
+                      ><input type="checkbox" /> I select this</label
+                    >
+                  </div>
+                  <div class="hobby-card">
+                    <h4>Astrobiology</h4>
+                    <p>Search for life elsewhere in space.</p>
+                    <label class="checkline"
+                      ><input type="checkbox" /> I select this</label
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Hobbies -->
-          <div class="hobbies">
-            <p class="title">Interests or Hobbies :</p>
-            <div class="hobby-grid">
-              <div class="hobby-card">
-                <h4>Cosmology</h4>
-                <p>Studies the origin and evolution of the Universe.</p>
-                <label class="checkline"><input type="checkbox"> I select this</label>
+          <!-- Subscription -->
+          <div class="subscription">
+            <p class="title">Subscription Options :</p>
+            <div class="plans">
+              <div class="plan-card">
+                <h4>Free</h4>
+                <p>
+                  Start your cosmic journey with basic features and daily space
+                  updates.
+                </p>
+                <label class="checkline"
+                  ><input type="checkbox" /> I select this</label
+                >
               </div>
-              <div class="hobby-card">
-                <h4>Astrophysics</h4>
-                <p>Study of the physics of stars and galaxies.</p>
-                <label class="checkline"><input type="checkbox"> I select this</label>
+              <div class="plan-card">
+                <h4>Premium ($5/month)</h4>
+                <p>
+                  Unlock more content, interactive tools, and detailed planetary
+                  guides.
+                </p>
+                <label class="checkline"
+                  ><input type="checkbox" /> I select this</label
+                >
               </div>
-              <div class="hobby-card">
-                <h4>Planetary Astronomy</h4>
-                <p>Study of planets, moons, and asteroids.</p>
-                <label class="checkline"><input type="checkbox"> I select this</label>
-              </div>
-              <div class="hobby-card">
-                <h4>Astrobiology</h4>
-                <p>Search for life elsewhere in space.</p>
-                <label class="checkline"><input type="checkbox"> I select this</label>
+              <div class="plan-card">
+                <h4>Pro ($15/month)</h4>
+                <p>
+                  Full access to all features, exclusive missions, and learning
+                  resources.
+                </p>
+                <label class="checkline"
+                  ><input type="checkbox" /> I select this</label
+                >
               </div>
             </div>
           </div>
+
+          <div class="terms">
+            <label>
+              <input type="checkbox" required />
+              By continuing, you agree to our
+              <a href="#">Terms and Conditions</a>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <button type="submit" class="send-btn">Send informations</button>
+    </section>
+
+    <footer>
+      <div class="footercont">
+        <div class="logo">
+          <img src="images/logo.png" alt="#" />
+          <span>CosmicExplore</span>
+        </div>
+        <div class="container">
+          <div class="column">
+            <span>Legal</span>
+            <span>Terms of service</span>
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
+          </div>
+          <div class="column">
+            <span>Information</span>
+            <span>FAQ</span>
+            <span>Blog</span>
+            <span>Support</span>
+          </div>
+          <div class="column">
+            <span>Company</span>
+            <span>About Us</span>
+            <span>Careers</span>
+            <span>Contact Us</span>
+          </div>
         </div>
       </div>
-
-      <!-- Subscription -->
-      <div class="subscription">
-        <p class="title">Subscription Options :</p>
-        <div class="plans">
-          <div class="plan-card">
-            <h4>Free</h4>
-            <p>Start your cosmic journey with basic features and daily space updates.</p>
-            <label class="checkline"><input type="checkbox"> I select this</label>
-          </div>
-          <div class="plan-card">
-            <h4>Premium ($5/month)</h4>
-            <p>Unlock more content, interactive tools, and detailed planetary guides.</p>
-            <label class="checkline"><input type="checkbox"> I select this</label>
-          </div>
-          <div class="plan-card">
-            <h4>Pro ($15/month)</h4>
-            <p>Full access to all features, exclusive missions, and learning resources.</p>
-            <label class="checkline"><input type="checkbox"> I select this</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="terms">
-        <label>
-          <input type="checkbox" required>
-          By continuing, you agree to our <a href="#">Terms and Conditions</a>
-        </label>
-      </div>
-    </form>
-  </div>
-
-  <button type="submit" class="send-btn">Send informations</button>
-
-</body>
+      <span class="copyrights">© 2024 Codebenders. All rights reserved</span>
+    </footer>
+  </body>
 </html>
