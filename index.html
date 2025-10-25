@@ -10,7 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Alice&family=Fira+Mono:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>CosmicExplore</title>
   </head>
   <body>
@@ -45,13 +50,33 @@
       </div>
     </nav>
 
-    <!-- HERO SECTION - Raihana -->
-    <section id="hero"></section>
+    <!-- HERO SECTION - Rihab -->
+    <section class="h_hero">
+      <div class="h_text">
+        <h3 style="font-family: 'Fira Mono', monospace">
+          Explore the wonders of The Universe
+        </h3>
+        <p style="margin-top: 0.5em">
+          Your travel through space and time starts here
+        </p>
+      </div>
+      <button class="explore_button">Start Exploring</button>
+    </section>
 
-    <!-- FEATURED SECTIONS - Ilyas -->
+    <!-- FEATURED SECTIONS - Rihab -->
     <main>
-      <section id="object-of-week"></section>
-
+      <!--  section_1 -->
+      <section class="section_2" id="object-of-week">
+        <div class="text">
+          <h3>MARS</h3>
+          <p style="color: #ff8b8b">Red Planet</p>
+          <p>
+            Mars is the fourth planet from the Sun, and the seventh largest.
+            It’s the only planet we know of inhabited entirely by robots.
+          </p>
+        </div>
+      </section>
+      <!--  section_2 -->
       <section id="upcoming-events">
         <h1>Upcoming Spatial Events</h1>
         <div class="calendar-entry">
@@ -74,7 +99,28 @@
         </div>
       </section>
 
-      <section id="latest-discovery"></section>
+      <!--  section_3 -->
+      <section class="container_" id="latest-discovery">
+        <h1 class="page-title">New Exoplanet Discoveries</h1>
+
+        <div class="exoplanet-card">
+          <img
+            class="exoplanet-image"
+            src="images/exoplanet.png"
+            alt="NGTS-32 b exoplanet visualization"
+          />
+
+          <div class="exoplanet-content">
+            <h2 class="exoplanet-name">NGTS-32 b</h2>
+            <p class="exoplanet-description">
+              NGTS-32 b is a gas giant exoplanet that orbits a G-type star. Its
+              mass is 0.57 Jupiters, it takes 3.3 days to complete one orbit of
+              its star, and is 0.044 AU from its star. Its discovery was
+              announced in 2025.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- TESTIMONIALS - Yahia -->
@@ -191,7 +237,17 @@
     </section>
 
     <!-- NEWSLETTER - Rihab -->
-    <section id="newsletter"></section>
+    <section class="newsletter-container" id="newsletter">
+      <h2 class="newsletter-title">Newsletter</h2>
+      <form class="newsletter-form" onsubmit="handleSubmit(event)">
+        <input
+          type="email"
+          class="newsletter-input"
+          placeholder="enter your email here ..."
+        />
+        <button type="submit" class="newsletter-submit">submit</button>
+      </form>
+    </section>
 
     <footer>
       <div class="footercont">
