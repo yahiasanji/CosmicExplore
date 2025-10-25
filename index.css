@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /*-------------------------      NAV_BAR     ------------------------*/
@@ -38,16 +39,20 @@ ul li {
   font-weight: 100;
   font-family: "Nunito", sans-serif;
 }
-
+ul li a {color: white;}
+ul li:hover{border: 1px solid white;}
 .login {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3px 20px;
 }
+.login:hover {border: 1px solid white;}
 .login img {
   height: 2em;
   width: 2em;
 }
+.login a{color: white;}
 .burger_menu {
   display: none;
 }
